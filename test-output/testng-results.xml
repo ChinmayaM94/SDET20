@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="2" total="6" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-27T22:45:57 IST" name="Suite" finished-at="2021-08-27T22:46:59 IST" duration-ms="61403">
+  <suite started-at="2021-08-28T23:33:34 IST" name="Suite" finished-at="2021-08-28T23:36:50 IST" duration-ms="195994">
     <groups>
       <group name="regressionTest">
-        <method signature="CreateNewLeadTest.creatNewLeadByInvalidAnnualRevenueTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" name="creatNewLeadByInvalidAnnualRevenueTest" class="com.vtiger.comcast.leadtest.CreateNewLeadTest"/>
+        <method signature="CreateNewLeadTest.creatNewLeadByInvalidAnnualRevenueTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@618425b5]" name="creatNewLeadByInvalidAnnualRevenueTest" class="com.vtiger.comcast.leadtest.CreateNewLeadTest"/>
+        <method signature="CreateNewLeadTest.creatNewLeadByValidAnnualRevenueTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@618425b5]" name="creatNewLeadByValidAnnualRevenueTest" class="com.vtiger.comcast.leadtest.CreateNewLeadTest"/>
+        <method signature="CreateNewLeadTest.createNewLeadByAssignToTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@618425b5]" name="createNewLeadByAssignToTest" class="com.vtiger.comcast.leadtest.CreateNewLeadTest"/>
+        <method signature="ConvertLeadTest.convertLeadBySelectingAllCheckboxTest()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@61001b64]" name="convertLeadBySelectingAllCheckboxTest" class="com.vtiger.comcast.leadtest.ConvertLeadTest"/>
+        <method signature="ConvertLeadTest.convertLeadBySelectingOnlyOpportunityCheckboxTest()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@61001b64]" name="convertLeadBySelectingOnlyOpportunityCheckboxTest" class="com.vtiger.comcast.leadtest.ConvertLeadTest"/>
+        <method signature="ConvertLeadTest.convertLeadBySelectingOnlyOrgCheckboxTest()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@61001b64]" name="convertLeadBySelectingOnlyOrgCheckboxTest" class="com.vtiger.comcast.leadtest.ConvertLeadTest"/>
       </group> <!-- regressionTest -->
+      <group name="smokeTest">
+        <method signature="CreateNewLeadTest.createNewLeadByAssignToTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@618425b5]" name="createNewLeadByAssignToTest" class="com.vtiger.comcast.leadtest.CreateNewLeadTest"/>
+      </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2021-08-27T22:45:57 IST" name="Test" finished-at="2021-08-27T22:46:59 IST" duration-ms="61403">
+    <test started-at="2021-08-28T23:33:34 IST" name="TestRunner-Chrome" finished-at="2021-08-28T23:34:48 IST" duration-ms="74241">
       <class name="com.vtiger.comcast.leadtest.CreateNewLeadTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" started-at="2021-08-27T22:45:57 IST" name="configBS" finished-at="2021-08-27T22:45:57 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" started-at="2021-08-27T22:45:57 IST" name="configBC" finished-at="2021-08-27T22:46:02 IST" duration-ms="4455" status="PASS">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@618425b5]" started-at="2021-08-28T23:33:34 IST" name="configBC" finished-at="2021-08-28T23:33:39 IST" duration-ms="5220" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,231 +29,110 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" started-at="2021-08-27T22:46:02 IST" name="configBM" finished-at="2021-08-27T22:46:05 IST" duration-ms="3052" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@618425b5]" started-at="2021-08-28T23:33:39 IST" name="configBM" finished-at="2021-08-28T23:33:44 IST" duration-ms="4580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method retried="true" signature="creatNewLeadByInvalidAnnualRevenueTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" started-at="2021-08-27T22:46:05 IST" name="creatNewLeadByInvalidAnnualRevenueTest" finished-at="2021-08-27T22:46:16 IST" duration-ms="10863" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at com.vtiger.comcast.leadtest.CreateNewLeadTest.creatNewLeadByInvalidAnnualRevenueTest(CreateNewLeadTest.java:151)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="creatNewLeadByInvalidAnnualRevenueTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@618425b5]" started-at="2021-08-28T23:33:44 IST" name="creatNewLeadByInvalidAnnualRevenueTest" finished-at="2021-08-28T23:34:01 IST" duration-ms="16784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creatNewLeadByInvalidAnnualRevenueTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" started-at="2021-08-27T22:46:16 IST" name="configAM" finished-at="2021-08-27T22:46:17 IST" duration-ms="1401" status="PASS">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@618425b5]" started-at="2021-08-28T23:34:01 IST" name="configAM" finished-at="2021-08-28T23:34:03 IST" duration-ms="1990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" started-at="2021-08-27T22:46:17 IST" name="configBM" finished-at="2021-08-27T22:46:19 IST" duration-ms="2293" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@618425b5]" started-at="2021-08-28T23:34:03 IST" name="configBM" finished-at="2021-08-28T23:34:06 IST" duration-ms="3331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method retried="true" signature="creatNewLeadByInvalidAnnualRevenueTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" started-at="2021-08-27T22:46:19 IST" name="creatNewLeadByInvalidAnnualRevenueTest" finished-at="2021-08-27T22:46:29 IST" duration-ms="9751" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at com.vtiger.comcast.leadtest.CreateNewLeadTest.creatNewLeadByInvalidAnnualRevenueTest(CreateNewLeadTest.java:151)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="creatNewLeadByValidAnnualRevenueTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@618425b5]" started-at="2021-08-28T23:34:06 IST" name="creatNewLeadByValidAnnualRevenueTest" finished-at="2021-08-28T23:34:23 IST" duration-ms="16433" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- creatNewLeadByInvalidAnnualRevenueTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" started-at="2021-08-27T22:46:29 IST" name="configAM" finished-at="2021-08-27T22:46:31 IST" duration-ms="1328" status="PASS">
+        </test-method> <!-- creatNewLeadByValidAnnualRevenueTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@618425b5]" started-at="2021-08-28T23:34:23 IST" name="configAM" finished-at="2021-08-28T23:34:24 IST" duration-ms="1648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" started-at="2021-08-27T22:46:31 IST" name="configBM" finished-at="2021-08-27T22:46:33 IST" duration-ms="2370" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@618425b5]" started-at="2021-08-28T23:34:24 IST" name="configBM" finished-at="2021-08-28T23:34:28 IST" duration-ms="3597" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method retried="true" signature="creatNewLeadByInvalidAnnualRevenueTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" started-at="2021-08-27T22:46:33 IST" name="creatNewLeadByInvalidAnnualRevenueTest" finished-at="2021-08-27T22:46:43 IST" duration-ms="10057" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at com.vtiger.comcast.leadtest.CreateNewLeadTest.creatNewLeadByInvalidAnnualRevenueTest(CreateNewLeadTest.java:151)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="createNewLeadByAssignToTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@618425b5]" started-at="2021-08-28T23:34:28 IST" name="createNewLeadByAssignToTest" finished-at="2021-08-28T23:34:45 IST" duration-ms="17513" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- creatNewLeadByInvalidAnnualRevenueTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" started-at="2021-08-27T22:46:43 IST" name="configAM" finished-at="2021-08-27T22:46:44 IST" duration-ms="1331" status="PASS">
+        </test-method> <!-- createNewLeadByAssignToTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@618425b5]" started-at="2021-08-28T23:34:45 IST" name="configAM" finished-at="2021-08-28T23:34:48 IST" duration-ms="2229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" started-at="2021-08-27T22:46:44 IST" name="configBM" finished-at="2021-08-27T22:46:47 IST" duration-ms="2319" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBM -->
-        <test-method signature="creatNewLeadByInvalidAnnualRevenueTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" started-at="2021-08-27T22:46:47 IST" name="creatNewLeadByInvalidAnnualRevenueTest" finished-at="2021-08-27T22:46:56 IST" duration-ms="9760" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at com.vtiger.comcast.leadtest.CreateNewLeadTest.creatNewLeadByInvalidAnnualRevenueTest(CreateNewLeadTest.java:151)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- creatNewLeadByInvalidAnnualRevenueTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" started-at="2021-08-27T22:46:57 IST" name="configAM" finished-at="2021-08-27T22:46:58 IST" duration-ms="1396" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" started-at="2021-08-27T22:46:58 IST" name="configAC" finished-at="2021-08-27T22:46:59 IST" duration-ms="761" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@618425b5]" started-at="2021-08-28T23:34:48 IST" name="configAC" finished-at="2021-08-28T23:34:48 IST" duration-ms="842" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@7c24b813]" started-at="2021-08-27T22:46:59 IST" name="configAS" finished-at="2021-08-27T22:46:59 IST" duration-ms="0" status="PASS">
+      </class> <!-- com.vtiger.comcast.leadtest.CreateNewLeadTest -->
+    </test> <!-- TestRunner-Chrome -->
+    <test started-at="2021-08-28T23:33:34 IST" name="TestRunner-Firefox" finished-at="2021-08-28T23:36:50 IST" duration-ms="195993">
+      <class name="com.vtiger.comcast.leadtest.ConvertLeadTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@61001b64]" started-at="2021-08-28T23:33:34 IST" name="configBS" finished-at="2021-08-28T23:33:34 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@61001b64]" started-at="2021-08-28T23:33:34 IST" name="configBC" finished-at="2021-08-28T23:34:29 IST" duration-ms="55102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@61001b64]" started-at="2021-08-28T23:34:29 IST" name="configBM" finished-at="2021-08-28T23:34:36 IST" duration-ms="7108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="convertLeadBySelectingAllCheckboxTest()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@61001b64]" started-at="2021-08-28T23:34:36 IST" name="convertLeadBySelectingAllCheckboxTest" finished-at="2021-08-28T23:35:23 IST" duration-ms="46702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertLeadBySelectingAllCheckboxTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@61001b64]" started-at="2021-08-28T23:35:23 IST" name="configAM" finished-at="2021-08-28T23:35:25 IST" duration-ms="1492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@61001b64]" started-at="2021-08-28T23:35:25 IST" name="configBM" finished-at="2021-08-28T23:35:27 IST" duration-ms="2445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="convertLeadBySelectingOnlyOpportunityCheckboxTest()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@61001b64]" started-at="2021-08-28T23:35:27 IST" name="convertLeadBySelectingOnlyOpportunityCheckboxTest" finished-at="2021-08-28T23:36:06 IST" duration-ms="38580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertLeadBySelectingOnlyOpportunityCheckboxTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@61001b64]" started-at="2021-08-28T23:36:06 IST" name="configAM" finished-at="2021-08-28T23:36:07 IST" duration-ms="1480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@61001b64]" started-at="2021-08-28T23:36:07 IST" name="configBM" finished-at="2021-08-28T23:36:10 IST" duration-ms="2635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="convertLeadBySelectingOnlyOrgCheckboxTest()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@61001b64]" started-at="2021-08-28T23:36:10 IST" name="convertLeadBySelectingOnlyOrgCheckboxTest" finished-at="2021-08-28T23:36:47 IST" duration-ms="37395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertLeadBySelectingOnlyOrgCheckboxTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@61001b64]" started-at="2021-08-28T23:36:47 IST" name="configAM" finished-at="2021-08-28T23:36:49 IST" duration-ms="1516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@61001b64]" started-at="2021-08-28T23:36:49 IST" name="configAC" finished-at="2021-08-28T23:36:50 IST" duration-ms="1504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@61001b64]" started-at="2021-08-28T23:36:50 IST" name="configAS" finished-at="2021-08-28T23:36:50 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- com.vtiger.comcast.leadtest.CreateNewLeadTest -->
-    </test> <!-- Test -->
+      </class> <!-- com.vtiger.comcast.leadtest.ConvertLeadTest -->
+    </test> <!-- TestRunner-Firefox -->
   </suite> <!-- Suite -->
 </testng-results>

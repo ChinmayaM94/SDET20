@@ -16,7 +16,7 @@ import com.vtiger.comcast.pomrepositorylib.LeadsPage;
 public class ConvertLeadTest extends BaseClass {
 	
 	/*TC_22*/
-	@Test(groups = {"regressionTest"}, retryAnalyzer = RetryAnalyzer.class)
+	@Test(groups = { "regressionTest" } , retryAnalyzer = RetryAnalyzer.class )
 	public void convertLeadBySelectingAllCheckboxTest() throws Throwable {
 		/* Test script data */
 		String partialHomeTitle = eLib.getDataFromExcel("LeadsModule", 10, 2);
@@ -77,7 +77,7 @@ public class ConvertLeadTest extends BaseClass {
 	}
 	
 	/*TC_23*/
-	@Test(groups = {"regressionTest"}, retryAnalyzer = RetryAnalyzer.class)
+	@Test(groups = { "regressionTest" } , retryAnalyzer = RetryAnalyzer.class )
 	public void convertLeadBySelectingOnlyOrgCheckboxTest() throws Throwable {
 		/* Test script data */
 		String partialHomeTitle = eLib.getDataFromExcel("LeadsModule", 13, 2);
@@ -151,7 +151,7 @@ public class ConvertLeadTest extends BaseClass {
 	}
 	
 	/*TC_24*/
-	@Test(groups = {"regressionTest"}, retryAnalyzer = RetryAnalyzer.class)
+	@Test(groups = { "regressionTest" } , retryAnalyzer = RetryAnalyzer.class )
 	public void convertLeadBySelectingOnlyOpportunityCheckboxTest() throws Throwable {
 		/* Test script data */
 		String partialHomeTitle = eLib.getDataFromExcel("LeadsModule", 16, 2);

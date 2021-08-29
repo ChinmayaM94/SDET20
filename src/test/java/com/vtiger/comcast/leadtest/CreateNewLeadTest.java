@@ -20,7 +20,7 @@ import com.vtiger.comcast.pomrepositorylib.LeadsPage;
 public class CreateNewLeadTest extends BaseClass {
 	
 	/*TC_10*/
-		@Test(groups = {"smokeTest", "regressionTest"}, retryAnalyzer = RetryAnalyzer.class)
+	@Test(groups = { "smokeTest", "regressionTest" } , retryAnalyzer = RetryAnalyzer.class )
 	public void createNewLeadByAssignToTest() throws Throwable {
 		/* Test script data */
 		String lastName = eLib.getDataFromExcel("LeadsModule", 1, 4)+randumNum;
@@ -74,7 +74,7 @@ public class CreateNewLeadTest extends BaseClass {
 	}
 	
 	/*TC_11*/
-	@Test(groups = {"regressionTest"}, retryAnalyzer = RetryAnalyzer.class)
+	@Test(groups = { "regressionTest" } , retryAnalyzer = RetryAnalyzer.class )
 	public void creatNewLeadByValidAnnualRevenueTest() throws Throwable {
 		/* Test script data */
 		String lastName = eLib.getDataFromExcel("LeadsModule", 4, 4)+randumNum;
@@ -113,7 +113,7 @@ public class CreateNewLeadTest extends BaseClass {
 	}
 	
 	/*TC_12*/
-	@Test(groups = {"regressionTest"}, retryAnalyzer = RetryAnalyzer.class)
+	@Test(groups = { "regressionTest" } , retryAnalyzer = RetryAnalyzer.class )
 	public void creatNewLeadByInvalidAnnualRevenueTest() throws Throwable {
 		/* Test script data */
 		String lastName = eLib.getDataFromExcel("LeadsModule", 7, 4)+randumNum;
