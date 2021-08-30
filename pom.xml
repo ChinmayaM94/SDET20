@@ -6,10 +6,10 @@
 	<artifactId>SDET_20_SeleniumFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<!-- <properties>
+	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-	</properties> -->
+	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
@@ -65,10 +65,10 @@
 			<id>ST</id>
 			<build>
 				<plugins>
-					<!-- <plugin>
+					<plugin>
 						<artifactId>maven-compiler-plugin</artifactId>
 						<version>3.8.0</version>
-					</plugin> -->
+					</plugin>
 					<!-- Below plug-in is used to execute tests -->
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
@@ -89,10 +89,10 @@
 			<id>FRT</id>
 			<build>
 				<plugins>
-					<!-- <plugin>
+					<plugin>
 						<artifactId>maven-compiler-plugin</artifactId>
 						<version>3.8.0</version>
-					</plugin> -->
+					</plugin>
 					<!-- Below plug-in is used to execute tests -->
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
@@ -113,10 +113,10 @@
 			<id>RRT</id>
 			<build>
 				<plugins>
-					<!-- <plugin>
+					<plugin>
 						<artifactId>maven-compiler-plugin</artifactId>
 						<version>3.8.0</version>
-					</plugin> -->
+					</plugin>
 					<!-- Below plug-in is used to execute tests -->
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
@@ -137,10 +137,10 @@
 			<id>DPT</id>
 			<build>
 				<plugins>
-					<!-- <plugin>
+					<plugin>
 						<artifactId>maven-compiler-plugin</artifactId>
 						<version>3.8.0</version>
-					</plugin> -->
+					</plugin>
 					<!-- Below plug-in is used to execute tests -->
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
@@ -161,10 +161,10 @@
 			<id>CBT</id>
 			<build>
 				<plugins>
-					<!-- <plugin>
+					<plugin>
 						<artifactId>maven-compiler-plugin</artifactId>
 						<version>3.8.0</version>
-					</plugin> -->
+					</plugin>
 					<!-- Below plug-in is used to execute tests -->
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
