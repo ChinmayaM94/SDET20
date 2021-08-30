@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="BROWSER" value="chrome"/>
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="TestRunner-Firefox(failed)">
+    <parameter name="BROWSER" value="firefox"/>
     <classes>
       <class name="com.vtiger.comcast.leadtest.CreateNewLeadTest">
         <methods>
@@ -16,5 +16,5 @@
         </methods>
       </class> <!-- com.vtiger.comcast.leadtest.CreateNewLeadTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestRunner-Firefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->

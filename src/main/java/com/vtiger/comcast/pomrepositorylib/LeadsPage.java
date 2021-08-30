@@ -2,6 +2,7 @@ package com.vtiger.comcast.pomrepositorylib;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -42,6 +43,13 @@ public class LeadsPage extends WebDriverUtility {
 	@FindBy(name = "pagenum")
 	private WebElement pageNumEdt;
 	
+	@FindBy(xpath = "//table[@class='lvt small']")
+	private WebElement leadsTable;
+	
+	public WebElement getLeadsTable() {
+		return leadsTable;
+	}
+
 	public WebElement getPageNumEdt() {
 		return pageNumEdt;
 	}
@@ -67,24 +75,29 @@ public class LeadsPage extends WebDriverUtility {
 	}
 	
 	
-//	public void selectALead(String updatedLastName) {
-//		int count=1;
-//		outerloop:
-//		for(;;) {
-//			if(Integer.parseInt(pageNumEdt.getAttribute("value"))==count) {
-//				for(WebElement ele:lastNameList) {
-//					if(ele.getText().equals(updatedLastName)) {
-//						ele.click();
-//						break outerloop;
-//					}
-//				}
-//				count++;
-//				nextBtn.click();
-//				waitForAttributeValue(driver, pageNumEdt, "value", String.valueOf(count));
-//			} else {
-//				break;
-//			}
-//		}
-//	}
+	public void selectALead(String updatedLastName) {
+		int count=1;
+		outerloop:
+		for(;;) {
+			if(Integer.parseInt(pageNumEdt.getAttribute("value"))==count) {
+				try {
+					turnOffImplicitWait(driver);
+					WebElement leadNameElement = leadsTable.findElement(By.xpath("//a[text()='"+updatedLastName+"']"));
+					if(leadNameElement.isDisplayed()) {
+						leadNameElement.click();
+						waitUntilPageLoad(driver);
+						break outerloop;
+					}
+				} catch (Exception e) {
+					count++;
+					nextBtn.click();
+					waitForAttributeValue(driver, pageNumEdt, "value", String.valueOf(count));
+				}
+			} else {
+				waitUntilPageLoad(driver);
+				break;
+			}
+		}
+	}
 	
 }

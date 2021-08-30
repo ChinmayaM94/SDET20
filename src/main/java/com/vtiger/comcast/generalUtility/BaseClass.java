@@ -32,28 +32,10 @@ public class BaseClass {
 		
 	}
 	
-	@Parameters("BROWSER")
-	@BeforeClass(groups = {"smokeTest", "regressionTest"})
-	public void configBC(String BROWSER) throws Throwable {
-		//String BROWSER = fLib.getPropertyKeyValue("browser");
-		String URL = fLib.getPropertyKeyValue("url");
-		if(BROWSER.equals("chrome")) {
-			driver = new ChromeDriver();
-		} else if(BROWSER.equals("firefox")) {
-			driver = new FirefoxDriver();
-		} else if(BROWSER.equals("opera")) {
-			driver = new OperaDriver();
-		}
-		sDriver=driver;
-		wLib.maximize(driver);
-		wLib.waitUntilPageLoad(driver);
-		/*Navigate to application*/
-		driver.get(URL);
-	}
-	
+//	@Parameters("BROWSER")
 //	@BeforeClass(groups = {"smokeTest", "regressionTest"})
-//	public void configBC() throws Throwable {
-//		String BROWSER = fLib.getPropertyKeyValue("browser");
+//	public void configBC(String BROWSER) throws Throwable {
+//		//String BROWSER = fLib.getPropertyKeyValue("browser");
 //		String URL = fLib.getPropertyKeyValue("url");
 //		if(BROWSER.equals("chrome")) {
 //			driver = new ChromeDriver();
@@ -62,13 +44,31 @@ public class BaseClass {
 //		} else if(BROWSER.equals("opera")) {
 //			driver = new OperaDriver();
 //		}
-//		
 //		sDriver=driver;
 //		wLib.maximize(driver);
 //		wLib.waitUntilPageLoad(driver);
 //		/*Navigate to application*/
 //		driver.get(URL);
 //	}
+	
+	@BeforeClass(groups = {"smokeTest", "regressionTest"})
+	public void configBC() throws Throwable {
+		String BROWSER = fLib.getPropertyKeyValue("browser");
+		String URL = fLib.getPropertyKeyValue("url");
+		if(BROWSER.equals("chrome")) {
+			driver = new ChromeDriver();
+		} else if(BROWSER.equals("firefox")) {
+			driver = new FirefoxDriver();
+		} else if(BROWSER.equals("opera")) {
+			driver = new OperaDriver();
+		}
+		
+		sDriver=driver;
+		wLib.maximize(driver);
+		wLib.waitUntilPageLoad(driver);
+		/*Navigate to application*/
+		driver.get(URL);
+	}
 	
 	@BeforeMethod(groups = {"smokeTest", "regressionTest"})
 	public void configBM() throws Throwable {

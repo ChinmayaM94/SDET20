@@ -38,7 +38,15 @@ public class WebDriverUtility {
 	 * @param driver
 	 */
 	public void waitUntilPageLoad(WebDriver driver) {
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+	
+	/**
+	 * This method will stop the implicit wait for page loading
+	 * @param driver
+	 */
+	public void turnOffImplicitWait(WebDriver driver) {
+		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 	}
 	
 	/**

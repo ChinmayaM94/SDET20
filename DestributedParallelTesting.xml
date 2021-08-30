@@ -10,7 +10,7 @@
   
   <test thread-count="5" name="TestRunner-2">
     <classes>
-      <class name="com.vtiger.comcast.leadtest.ConvertLeadTest"/>
+      <class name="com.vtiger.comcast.leadtest.CreateNewLeadTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

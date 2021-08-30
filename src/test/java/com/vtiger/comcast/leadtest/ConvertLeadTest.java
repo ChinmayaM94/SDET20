@@ -1,6 +1,5 @@
 package com.vtiger.comcast.leadtest;
 
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -43,24 +42,8 @@ public class ConvertLeadTest extends BaseClass {
 		String updatedLastName = infoPage.getLastName().getText();
 		
 		homePage.getLeadsLink().click();
+		leadPage.selectALead(updatedLastName);
 		
-		int count=1;
-		outerloop:
-		for(;;) {
-			if(Integer.parseInt(leadPage.getPageNumEdt().getAttribute("value"))==count) {
-				for(WebElement ele:leadPage.getLastNameList()) {
-					if(ele.getText().equals(updatedLastName)) {
-						ele.click();
-						break outerloop;
-					}
-				}
-				count++;
-				leadPage.getNextBtn().click();
-				wLib.waitForAttributeValue(driver, leadPage.getPageNumEdt(), "value", String.valueOf(count));
-			} else {
-				break;
-			}
-		}
 		boolean isLeadInfoPage = infoPage.getSuccessfulMsg().getText().contains(updatedLastName);
 		Assert.assertTrue(isLeadInfoPage);
 		
@@ -103,24 +86,8 @@ public class ConvertLeadTest extends BaseClass {
 		String updatedLastName = infoPage.getLastName().getText();
 		
 		homePage.getLeadsLink().click();
+		leadPage.selectALead(updatedLastName);
 		
-		int count=1;
-		outerloop:
-		for(;;) {
-			if(Integer.parseInt(leadPage.getPageNumEdt().getAttribute("value"))==count) {
-				for(WebElement ele:leadPage.getLastNameList()) {
-					if(ele.getText().equals(updatedLastName)) {
-						ele.click();
-						break outerloop;
-					}
-				}
-				count++;
-				leadPage.getNextBtn().click();
-				wLib.waitForAttributeValue(driver, leadPage.getPageNumEdt(), "value", String.valueOf(count));
-			} else {
-				break;
-			}
-		}
 		boolean isLeadInfoPage = infoPage.getSuccessfulMsg().getText().contains(updatedLastName);
 		Assert.assertTrue(isLeadInfoPage);
 		
@@ -178,24 +145,8 @@ public class ConvertLeadTest extends BaseClass {
 		String updatedLastName = infoPage.getLastName().getText();
 		
 		homePage.getLeadsLink().click();
+		leadPage.selectALead(updatedLastName);
 		
-		int count=1;
-		outerloop:
-		for(;;) {
-			if(Integer.parseInt(leadPage.getPageNumEdt().getAttribute("value"))==count) {
-				for(WebElement ele:leadPage.getLastNameList()) {
-					if(ele.getText().equals(updatedLastName)) {
-						ele.click();
-						break outerloop;
-					}
-				}
-				count++;
-				leadPage.getNextBtn().click();
-				wLib.waitForAttributeValue(driver, leadPage.getPageNumEdt(), "value", String.valueOf(count));
-			} else {
-				break;
-			}
-		}
 		boolean isLeadInfoPage = infoPage.getSuccessfulMsg().getText().contains(updatedLastName);
 		Assert.assertTrue(isLeadInfoPage);
 		
