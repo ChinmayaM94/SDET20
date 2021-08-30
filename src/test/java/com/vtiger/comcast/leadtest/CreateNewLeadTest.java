@@ -68,7 +68,7 @@ public class CreateNewLeadTest extends BaseClass {
 		Assert.assertTrue(isLeadCreated);
 		
 		//verify unique lead no is generated or not
-		boolean isLeadNoGenerated = !leadInfo.getUniqueLeadNo().getText().isBlank();
+		boolean isLeadNoGenerated = !leadInfo.getUniqueLeadNo().getText().isEmpty();
 		soft.assertTrue(isLeadNoGenerated);
 		soft.assertAll();
 	}
@@ -107,7 +107,7 @@ public class CreateNewLeadTest extends BaseClass {
 		Assert.assertTrue(isLeadCreated);
 		
 		//verify unique lead no is generated or not
-		boolean isLeadNoGenerated = !leadInfo.getUniqueLeadNo().getText().isBlank();
+		boolean isLeadNoGenerated = !leadInfo.getUniqueLeadNo().getText().isEmpty();
 		soft.assertTrue(isLeadNoGenerated);
 		soft.assertAll();
 	}
