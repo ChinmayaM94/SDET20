@@ -1,73 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45213" started-at="2021-08-31T19:27:48 IST" finished-at="2021-08-31T19:28:33 IST">
+  <suite name="Default suite" duration-ms="36903" started-at="2021-09-02T18:24:38 IST" finished-at="2021-09-02T18:25:15 IST">
     <groups>
       <group name="regressionTest">
-        <method signature="CreateNewLeadTest.creatNewLeadByInvalidAnnualRevenueTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="creatNewLeadByInvalidAnnualRevenueTest" class="com.vtiger.comcast.leadtest.CreateNewLeadTest"/>
-        <method signature="CreateNewLeadTest.creatNewLeadByValidAnnualRevenueTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="creatNewLeadByValidAnnualRevenueTest" class="com.vtiger.comcast.leadtest.CreateNewLeadTest"/>
-        <method signature="CreateNewLeadTest.createNewLeadByAssignToTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="createNewLeadByAssignToTest" class="com.vtiger.comcast.leadtest.CreateNewLeadTest"/>
+        <method signature="ConvertLeadTest.convertLeadBySelectingAllCheckboxTest()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@6121c9d6]" name="convertLeadBySelectingAllCheckboxTest" class="com.vtiger.comcast.leadtest.ConvertLeadTest"/>
       </group> <!-- regressionTest -->
-      <group name="smokeTest">
-        <method signature="CreateNewLeadTest.createNewLeadByAssignToTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="createNewLeadByAssignToTest" class="com.vtiger.comcast.leadtest.CreateNewLeadTest"/>
-      </group> <!-- smokeTest -->
     </groups>
-    <test name="Default test" duration-ms="45213" started-at="2021-08-31T19:27:48 IST" finished-at="2021-08-31T19:28:33 IST">
-      <class name="com.vtiger.comcast.leadtest.CreateNewLeadTest">
-        <test-method status="PASS" signature="configBS()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="configBS" is-config="true" duration-ms="9" started-at="2021-08-31T19:27:48 IST" finished-at="2021-08-31T19:27:48 IST">
+    <test name="Default test" duration-ms="36903" started-at="2021-09-02T18:24:38 IST" finished-at="2021-09-02T18:25:15 IST">
+      <class name="com.vtiger.comcast.leadtest.ConvertLeadTest">
+        <test-method status="PASS" signature="configBS()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@6121c9d6]" name="configBS" is-config="true" duration-ms="9" started-at="2021-09-02T18:24:38 IST" finished-at="2021-09-02T18:24:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBS -->
-        <test-method status="PASS" signature="configBC()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="configBC" is-config="true" duration-ms="4520" started-at="2021-08-31T19:27:48 IST" finished-at="2021-08-31T19:27:52 IST">
+        <test-method status="PASS" signature="configBC()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@6121c9d6]" name="configBC" is-config="true" duration-ms="4487" started-at="2021-09-02T18:24:38 IST" finished-at="2021-09-02T18:24:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method status="PASS" signature="configBM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="configBM" is-config="true" duration-ms="3079" started-at="2021-08-31T19:27:52 IST" finished-at="2021-08-31T19:27:56 IST">
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@6121c9d6]" name="configBM" is-config="true" duration-ms="2835" started-at="2021-09-02T18:24:43 IST" finished-at="2021-09-02T18:24:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method status="PASS" signature="creatNewLeadByInvalidAnnualRevenueTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="creatNewLeadByInvalidAnnualRevenueTest" duration-ms="7743" started-at="2021-08-31T19:27:56 IST" finished-at="2021-08-31T19:28:03 IST">
+        <test-method status="PASS" signature="convertLeadBySelectingAllCheckboxTest()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@6121c9d6]" name="convertLeadBySelectingAllCheckboxTest" duration-ms="27290" started-at="2021-09-02T18:24:45 IST" finished-at="2021-09-02T18:25:13 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- creatNewLeadByInvalidAnnualRevenueTest -->
-        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="configAM" is-config="true" duration-ms="1435" started-at="2021-08-31T19:28:03 IST" finished-at="2021-08-31T19:28:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAM -->
-        <test-method status="PASS" signature="configBM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="configBM" is-config="true" duration-ms="2531" started-at="2021-08-31T19:28:05 IST" finished-at="2021-08-31T19:28:07 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBM -->
-        <test-method status="PASS" signature="creatNewLeadByValidAnnualRevenueTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="creatNewLeadByValidAnnualRevenueTest" duration-ms="10013" started-at="2021-08-31T19:28:07 IST" finished-at="2021-08-31T19:28:17 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- creatNewLeadByValidAnnualRevenueTest -->
-        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="configAM" is-config="true" duration-ms="1322" started-at="2021-08-31T19:28:17 IST" finished-at="2021-08-31T19:28:19 IST">
+        </test-method> <!-- convertLeadBySelectingAllCheckboxTest -->
+        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@6121c9d6]" name="configAM" is-config="true" duration-ms="1353" started-at="2021-09-02T18:25:13 IST" finished-at="2021-09-02T18:25:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method status="PASS" signature="configBM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="configBM" is-config="true" duration-ms="2347" started-at="2021-08-31T19:28:19 IST" finished-at="2021-08-31T19:28:21 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBM -->
-        <test-method status="PASS" signature="createNewLeadByAssignToTest()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="createNewLeadByAssignToTest" duration-ms="10056" started-at="2021-08-31T19:28:21 IST" finished-at="2021-08-31T19:28:31 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewLeadByAssignToTest -->
-        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="configAM" is-config="true" duration-ms="1354" started-at="2021-08-31T19:28:31 IST" finished-at="2021-08-31T19:28:32 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAM -->
-        <test-method status="PASS" signature="configAC()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="configAC" is-config="true" duration-ms="765" started-at="2021-08-31T19:28:32 IST" finished-at="2021-08-31T19:28:33 IST">
+        <test-method status="PASS" signature="configAC()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@6121c9d6]" name="configAC" is-config="true" duration-ms="873" started-at="2021-09-02T18:25:14 IST" finished-at="2021-09-02T18:25:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method status="PASS" signature="configAS()[pri:0, instance:com.vtiger.comcast.leadtest.CreateNewLeadTest@76a3e297]" name="configAS" is-config="true" duration-ms="0" started-at="2021-08-31T19:28:33 IST" finished-at="2021-08-31T19:28:33 IST">
+        <test-method status="PASS" signature="configAS()[pri:0, instance:com.vtiger.comcast.leadtest.ConvertLeadTest@6121c9d6]" name="configAS" is-config="true" duration-ms="1" started-at="2021-09-02T18:25:15 IST" finished-at="2021-09-02T18:25:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- com.vtiger.comcast.leadtest.CreateNewLeadTest -->
+      </class> <!-- com.vtiger.comcast.leadtest.ConvertLeadTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

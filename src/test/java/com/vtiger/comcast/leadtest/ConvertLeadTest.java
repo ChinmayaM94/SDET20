@@ -137,7 +137,7 @@ public class ConvertLeadTest extends BaseClass {
 		
 		/*precondition*/
 		LeadsPage leadPage = new LeadsPage(driver);
-		leadPage.getCreateLeadImg().click();;
+		leadPage.getCreateLeadImg().click();
 		CreateNewLeadPage createLead = new CreateNewLeadPage(driver);
 		createLead.createNewLead(lastName, companyName);
 		
