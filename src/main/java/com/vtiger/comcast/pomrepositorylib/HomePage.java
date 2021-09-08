@@ -30,7 +30,6 @@ public class HomePage extends WebDriverUtility {
 	@FindBy(linkText = "Sign Out")
 	private WebElement signOutLink;
 	
-
 	public WebElement getLeadsLink() {
 		return leadsLink;
 	}
@@ -55,8 +54,5 @@ public class HomePage extends WebDriverUtility {
 		mouseHover(driver, administratorLink);
 		signOutLink.click();
 	}
-	
-	
-
 
 }
